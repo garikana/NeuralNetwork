@@ -1,6 +1,10 @@
 from loadinputs import ImportTrainData
 import numpy as np
+"""
+1)To normalize the raw training pixel values.
+2)To combine training & labels into tuple to be fed to the NN
 
+"""
 class Training_data:
 
     def __init__(self):
