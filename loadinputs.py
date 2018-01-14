@@ -1,6 +1,9 @@
 import numpy as np
 import gzip 
+"""
+Load the MNIST training & label data
 
+"""
 class ImportTrainData:
 
     def __init__(self,path):
