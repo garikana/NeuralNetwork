@@ -3,8 +3,10 @@ Network.py. The code implements a simple NN to solve classification problems. As
 nuances involved in implementing a simple NN, the code is not optimized and no where near production quality.
 I will attempt to optimize it when I have time. I have drawn heavily from Michael A. Nielsen's excellent ebook "Neural Networks and Deep Learning". 
 
-
+================
 Prerequisites:-
+================
+
 Python2.7
 Numpy for Python2.7
 MNIST digits training data 
@@ -15,7 +17,19 @@ Note:- The above 2 files from MNIST contains data for 60000 24*24 pixel grayscal
        I have used the first 50000 data points for training & the rest for testing. For
        testing you can download the 10000 image test data set from MNIST instead.
 
+=========================================
+Initialization & Operation of the Network:-
+=========================================
+
+1) loadinputs.py loads the raw training & label data from the 2 MNIST gzip files.
+2) test.py normalizes the loaded raw data & combines the training & label data into nice tuples.
+3) The above tuples are fed to the neural network class Network for training the weights & biases.
+4) The 'test_network' method of Network class publishes the activations count on supplied test data after each epoch of training.
+
+
+=====================================
 Steps to run the learning algorithm:-
+=====================================
 
 1) From the python IDLE run the below.
 >>>from test import Training_data
