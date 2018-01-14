@@ -1,7 +1,7 @@
 import numpy as np
 import math
 
-""" network class defines the 3 layer neural network.
+""" network class defines the multi-layer neural network.
 1st layer is the input layer(no weights, only biases)
 2nd layer is the hidden layer(weights and biases)
 3rd layer is the output layer(weights and biases)
@@ -9,7 +9,7 @@ neural network consists of the following attributes
 1) The weight matrices for 2 and 3rd layer. For the nth layer, the matrix consists of j rows(neurons in nth layer)
                                                                                & k cols(neurons in (n-1)th layer)
 2) The bias matrices for 1,2 and 3rd layers. For the nth layer, the matrix consists of j rows(neurons in nth layer) and 1 col
-3) The input matrix consists of x1,x2,x3....xn,y
+3) The input matrix consists of x1,x2,x3....xn,y, where x's are the normalized training inputs, y is the label
 
 """
 # accepts a tuple of neurons in each layer
